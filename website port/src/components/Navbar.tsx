@@ -84,7 +84,7 @@ export function Navbar() {
               scale: 1.05
             }}>
             
-            {'<AP />'}
+            {'#1'}
           </motion.a>
 
           {/* Desktop Navigation */}

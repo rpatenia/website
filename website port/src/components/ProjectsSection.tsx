@@ -16,41 +16,41 @@ interface Project {
 const projects: Project[] = [
 {
   id: 1,
-  title: 'Neural Style Transfer App',
+  title: 'Multi-Task Semi-Supervised Learning with Automatically Generated Auxiliary',
   description:
-  'AI-powered application that applies artistic styles to images using deep learning',
+  'dwdawd',
   longDescription:
-  'Built a full-stack application that leverages convolutional neural networks to transfer artistic styles from famous paintings to user-uploaded images. Implemented using TensorFlow for the ML backend and React for an intuitive user interface. Achieved 95% user satisfaction rate.',
+  'Built a deep learning framework that automatically segments 43 dental structures in 3D CBCT scans using only 20% labeled data. Integrated U-Mamba2 with Mean Teacher semi-supervised learning and automatically generated tooth apex landmarks and nerve centerlines as auxiliary training targets achieving clinical-grade accuracy at 90% reduced annotation cost.',
   category: ['AI/ML'],
-  techStack: ['Python', 'TensorFlow', 'Flask', 'React', 'Docker'],
+  techStack: ['Python', 'PyTorch', 'U-Mamba2', 'Semi-Supervised Learning', 'Medical Imaging','CBCT','Multitask Learning'],
   liveUrl: '#',
   githubUrl: '#',
   featured: true
 },
 {
   id: 2,
-  title: 'Sentiment Analysis Dashboard',
-  description: 'Real-time sentiment analysis of social media data using BERT',
-  category: ['AI/ML', 'Data Science'],
-  techStack: ['Python', 'BERT', 'Streamlit', 'Pandas', 'Plotly'],
+  title: 'StockTrack AI: A Web-Based Inventory and Ordering System with AI Demand Forecasting',
+  description: 'An AI-powered web application that integrates real-time inventory tracking, automated ordering, and machine learning–based demand forecasting to optimize stock management and reduce supply inefficiencies',
+  category: ['AI/ML', 'Web Dev'],
+  techStack: ['Python', 'Node.js', 'React', 'MySQL', 'Docker'],
   liveUrl: '#',
-  githubUrl: '#'
+  githubUrl: 'https://github.com/rpatenia/StockTrack'
 },
 {
   id: 3,
-  title: 'AI-Powered Code Review Bot',
+  title: 'DentEase',
   description:
-  'Automated code review system using GPT models and GitHub Actions',
+  'A mobile dental clinic app developed in Kotlin using MVVM using architecture, featuring real-time Firebase synchronization and Paymongo payments',
   category: ['AI/ML'],
-  techStack: ['Python', 'OpenAI API', 'GitHub Actions', 'FastAPI'],
+  techStack: ['Kotlin', 'java', 'Gradle', 'MVVM','Firebase', 'Android'],
   liveUrl: '#',
-  githubUrl: '#'
+  githubUrl: 'https://github.com/Zyrreaell/Dentease'
 },
 {
   id: 4,
-  title: 'Real-Time Object Detection',
+  title: 'Hyperparameter Optimization of YOLOv26 for Real-Time Fire and Smoke Detection on Edge Devices',
   description:
-  'Computer vision system for real-time object detection and tracking',
+  'A computer vision project that optimizes YOLOv26 through hyperparameter tuning and model evaluation to achieve accurate, low-latency fire and smoke detection on resource-constrained edge devices',
   category: ['AI/ML'],
   techStack: ['Python', 'YOLO', 'OpenCV', 'TensorFlow'],
   liveUrl: '#',
@@ -113,7 +113,7 @@ export function ProjectsSection() {
           className="mb-12">
           
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="neon-glow">Featured Projects</span>
+            <span className="neon-glow">Projects</span>
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-neonBlue to-neonPurple rounded-full" />
         </motion.div>

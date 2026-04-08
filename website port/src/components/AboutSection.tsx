@@ -11,21 +11,21 @@ import {
 const timeline = [
 {
   year: '2018-2020',
-  title: 'High School',
-  description: 'Graduated with honors, discovered passion for programming',
+  title: 'Immaculate Heart of Mary College',
+  description: 'Graduated with Loyalty Award for Academic Excellence',
   icon: GraduationCapIcon
 },
 {
   year: '2020-2024',
-  title: 'B.Tech Computer Science',
+  title: 'Mapua University Intramuros',
   description:
-  'Specialized in AI/ML, Data Structures, Algorithms, Deep Learning',
+  'SHS Graduate ',
   icon: GraduationCapIcon
 },
 {
   year: '2023',
-  title: 'Research Publication',
-  description: 'Published paper on transformer architectures in NLP',
+  title: 'Mapua University Makati',
+  description: 'Specialized in Data Science',
   icon: AwardIcon
 }];
 
@@ -105,18 +105,10 @@ export function AboutSection() {
               </h3>
               <div className="space-y-4 text-gray-300 leading-relaxed">
                 <p>
-                  I'm a passionate Computer Science student with a deep
-                  fascination for artificial intelligence and its potential to
-                  transform the world. My journey into AI/ML began during my
-                  sophomore year when I built my first neural network to
-                  classify handwritten digits.
+                  I’m a passionate Computer Science student at Mapua University with a deep fascination for artificial intelligence and its potential to transform the world. My journey into Data Science began with a focus on building systems that don't just process information but understand it.
                 </p>
                 <p>
-                  Since then, I've been on a mission to master the art and
-                  science of building intelligent systems. From winning
-                  hackathons to publishing research papers, I've dedicated
-                  myself to pushing the boundaries of what's possible with
-                  machine learning.
+                 I’ve been on a mission to master the art and science of building intelligent systems. From optimizing YOLOv26 for real-time edge detection to developing AI-powered demand forecasting for inventory management, I've dedicated myself to pushing the boundaries of what's possible with machine learning.
                 </p>
                 <p>
                   When I'm not training models or debugging code, you'll find me

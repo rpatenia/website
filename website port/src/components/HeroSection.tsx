@@ -175,7 +175,7 @@ export function HeroSection() {
               }}
               className="text-5xl md:text-7xl font-bold mb-4 neon-glow">
               
-              Arjun Patel
+              Ryan Patenia
             </motion.h1>
 
             <motion.div
@@ -223,9 +223,7 @@ export function HeroSection() {
               }}
               className="text-gray-400 text-lg mb-8 max-w-xl">
               
-              Passionate about leveraging AI and machine learning to create
-              innovative solutions. Currently pursuing B.Tech in Computer
-              Science with a focus on deep learning and data science.
+              I am a Computer Science student at Mapua University specializing in Data Science. I leverage AI and machine learning to create innovative, efficient solutions, with a current focus on Deep Learning and NLP
             </motion.p>
 
             <motion.div
@@ -255,17 +253,18 @@ export function HeroSection() {
                 View Projects
               </motion.button>
               <motion.a
-                href="/resume.pdf"
-                download
-                whileHover={{
-                  scale: 1.05
-                }}
-                whileTap={{
-                  scale: 0.95
-                }}
-                className="px-8 py-3 border-2 border-neonPurple text-neonPurple font-semibold rounded-lg hover:bg-neonPurple/10 transition-colors">
-                
-                Download Resume
+ href="https://drive.google.com/file/d/1a6Iejx5McebjQvfR5TobGXdQPs6pNxnD/view?usp=sharing"
+  target="_blank"
+  rel="noopener noreferrer"
+  whileHover={{
+    scale: 1.05
+  }}
+  whileTap={{
+    scale: 0.95
+  }}
+  className="px-8 py-3 border-2 border-neonPurple text-neonPurple font-semibold rounded-lg hover:bg-neonPurple/10 transition-colors">
+  
+  Download Resume
               </motion.a>
             </motion.div>
           </motion.div>
@@ -298,13 +297,13 @@ export function HeroSection() {
                 {' = {'}
                 {'\n'}
                 {'  name: '}
-                <span className="text-green-400">{'"Arjun Patel"'}</span>
+                <span className="text-green-400">{'"Ryan Patenia"'}</span>
                 {',\n'}
                 {'  role: '}
                 <span className="text-green-400">{'"AI/ML Engineer"'}</span>
                 {',\n'}
                 {'  education: '}
-                <span className="text-green-400">{'"B.Tech CS"'}</span>
+                <span className="text-green-400">{'"BS COMPUTER SCIENCE"'}</span>
                 {',\n'}
                 {'  skills: ['}
                 <span className="text-green-400">{'"Python"'}</span>
@@ -329,14 +328,7 @@ export function HeroSection() {
                 <span className="text-green-400">
                   {'"Deep Learning & NLP"'}
                 </span>
-                {',\n'}
-                {'  hackathons: '}
-                <span className="text-yellow-400">5</span>
-                {',\n'}
-                {'  coffeeConsumed: '}
-                <span className="text-yellow-400">Infinity</span>{' '}
-                <span className="text-gray-500">{'// coffee'}</span>
-                {'\n};'}
+  
               </div>
             </div>
           </motion.div>
