@@ -1,13 +1,14 @@
 {
-  "name": "patenia portfolio",
+  "name": "patenia-portfolio",
   "version": "0.0.1",
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "npx vite",
-    "build": "npx vite build",
+    "dev": "vite",
+    "build": "vite build",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "preview": "npx vite preview"
+    "preview": "vite preview",
+    "postinstall": "chmod +x node_modules/.bin/vite"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
