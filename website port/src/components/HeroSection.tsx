@@ -230,7 +230,7 @@ export function HeroSection() {
                 
                 {/* --- IMAGE TAG: REPLACE SRC WITH YOUR PHOTO --- */}
                 <img
-                  src="public/me.jpg"
+                  src="/me.jpg"
                   alt="Ryan Patenia Profile"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />

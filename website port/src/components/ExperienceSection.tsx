@@ -26,8 +26,8 @@ const experiences: ExperienceItem[] = [
       'How the massive scale of Big Data fuels Artificial Intelligence, while investigating the critical ethical frameworks needed to prevent bias and protect privacy'
     ],
     icon: AwardIcon,
-    image: 'public/coursera1.png', // Replace with your image
-    link: 'https://coursera.org/share/b79e6f71802e21dc99705fdb93ca8c35', // Add your actual links here
+    image: '/coursera1.png',
+    link: 'https://coursera.org/share/b79e6f71802e21dc99705fdb93ca8c35',
     featured: true 
   },
   {
@@ -40,7 +40,7 @@ const experiences: ExperienceItem[] = [
       'Demonstrates a strong mastery of both the technical frameworks governing software production and the critical ethical considerations of modern data science.'
     ],
     icon: AwardIcon,
-    image: 'public/coursera2.png', // Replace with your image
+    image: '/coursera2.png',
     link: 'https://coursera.org/share/eb489b77465994d4ccd1e1e266badf9d'
   },
   {
@@ -53,7 +53,7 @@ const experiences: ExperienceItem[] = [
       'Integration methods such as adaptive quadrature, and interpolation algorithms using a cubic spline'
     ],
     icon: AwardIcon,
-    image: 'public/coursera3.png',
+    image: '/coursera3.png',
     link: 'https://coursera.org/share/85f680489d4359c79738c4ea9f24b756'
   },
   {
@@ -66,7 +66,7 @@ const experiences: ExperienceItem[] = [
       'Covers the end-to-end process of how data is indexed, ranked, and retrieved for both the open web and private corporate environments.'
     ],
     icon: AwardIcon,
-    image: 'public/coursera4.png',
+    image: '/coursera4.png', 
     link: 'https://coursera.org/share/baf8665ac43dbfac5650615f1fe48238'
   },
   {
@@ -79,7 +79,7 @@ const experiences: ExperienceItem[] = [
       'deep exploration of the philosophical, legal, and social dimensions of AI.'
     ],
     icon: AwardIcon,
-    image: 'public/coursera5.png',
+    image: '/coursera5.png',
     link: 'https://coursera.org/share/b8f847411e932b1e49a58abadc1aeec1'
   }
 ];

@@ -15,21 +15,21 @@ const timeline = [
     title: 'Immaculate Heart of Mary College',
     description: 'Grade School to High School. Developed a strong academic foundation while actively participating in extracurricular activities',
     icon: GraduationCapIcon,
-    logo: '/public/imma.png' 
+    logo: '/imma.png'
   },
   {
     year: '2020-2024',
     title: 'Mapua University Intramuros',
     description: 'Senior High School - STEM Strand. Focused on advanced coursework in science and mathematics, developing strong analytical and problem-solving skills.',
     icon: GraduationCapIcon,
-    logo: '/public/maps.png' 
+    logo: '/maps.png' 
   },
   {
     year: '2023',
     title: 'Mapua University Makati',
-    description: 'College - BS Computer Science Specializing in Data Science.Currently Building software and applying machine learning to solve complex problems.',
+    description: 'College - BS Computer Science Specializing in Data Science. Currently Building software and applying machine learning to solve complex problems.',
     icon: AwardIcon,
-    logo: '/public/maps.png' 
+    logo: '/maps.png'
   }
 ];
 
