@@ -1,17 +1,20 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { ChevronDownIcon } from 'lucide-react';
+
 const titles = [
-'AI/ML Engineer',
-'Full-Stack Developer',
-'Data Scientist',
-'Problem Solver'];
+  'Artificial Intelligence',
+  'Machine Learning',
+  'Full-Stack Developer',
+  'Data Science'
+];
 
 export function HeroSection() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [titleIndex, setTitleIndex] = useState(0);
   const [displayText, setDisplayText] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
+
   useEffect(() => {
     const currentTitle = titles[titleIndex];
     const timeout = setTimeout(
@@ -35,6 +38,7 @@ export function HeroSection() {
     );
     return () => clearTimeout(timeout);
   }, [displayText, isDeleting, titleIndex]);
+
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
@@ -47,6 +51,7 @@ export function HeroSection() {
     };
     setCanvasSize();
     window.addEventListener('resize', setCanvasSize);
+    
     class Particle {
       x: number;
       y: number;
@@ -72,10 +77,12 @@ export function HeroSection() {
         ctx.fill();
       }
     }
+    
     const particles: Particle[] = [];
     for (let i = 0; i < 80; i++) {
       particles.push(new Particle());
     }
+    
     const animate = () => {
       ctx.fillStyle = 'rgba(10, 10, 15, 0.1)';
       ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -106,265 +113,156 @@ export function HeroSection() {
       cancelAnimationFrame(animId);
     };
   }, []);
+
   const scrollToProjects = () => {
     document.getElementById('projects')?.scrollIntoView({
       behavior: 'smooth'
     });
   };
-  const codeLines = [
-  {
-    text: 'const ',
-    color: 'text-purple-400'
-  }];
 
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      
+      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+    >
       <canvas
         ref={canvasRef}
         className="absolute inset-0 w-full h-full"
         style={{
           background: '#0a0a0f'
-        }} />
-      
+        }}
+      />
       <div className="absolute inset-0 grid-bg opacity-30" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <motion.div
-            initial={{
-              opacity: 0,
-              x: -50
-            }}
-            animate={{
-              opacity: 1,
-              x: 0
-            }}
-            transition={{
-              duration: 0.8
-            }}>
-            
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+          >
             <motion.p
-              initial={{
-                opacity: 0
-              }}
-              animate={{
-                opacity: 1
-              }}
-              transition={{
-                delay: 0.2
-              }}
-              className="text-neonBlue font-mono text-sm mb-4">
-              
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.2 }}
+              className="text-neonBlue font-mono text-sm mb-4"
+            >
               Hi, my name is
             </motion.p>
 
             <motion.h1
-              initial={{
-                opacity: 0,
-                y: 20
-              }}
-              animate={{
-                opacity: 1,
-                y: 0
-              }}
-              transition={{
-                delay: 0.3
-              }}
-              className="text-5xl md:text-7xl font-bold mb-4 neon-glow">
-              
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3 }}
+              className="text-5xl md:text-7xl font-bold mb-4 neon-glow"
+            >
               Ryan Patenia
             </motion.h1>
 
             <motion.div
-              initial={{
-                opacity: 0
-              }}
-              animate={{
-                opacity: 1
-              }}
-              transition={{
-                delay: 0.4
-              }}
-              className="text-2xl md:text-3xl font-semibold text-gray-400 mb-6 h-12 flex items-center">
-              
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.4 }}
+              className="text-2xl md:text-3xl font-semibold text-gray-400 mb-6 h-12 flex items-center"
+            >
               <span className="text-neonPurple">{displayText}</span>
               <span className="cursor-blink text-neonPurple ml-1">|</span>
             </motion.div>
 
             <motion.h2
-              initial={{
-                opacity: 0,
-                y: 20
-              }}
-              animate={{
-                opacity: 1,
-                y: 0
-              }}
-              transition={{
-                delay: 0.5
-              }}
-              className="text-3xl md:text-4xl font-bold text-white mb-6 leading-tight">
-              
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5 }}
+              className="text-3xl md:text-4xl font-bold text-white mb-6 leading-tight"
+            >
               Building Intelligent Systems That Solve Real-World Problems
             </motion.h2>
 
             <motion.p
-              initial={{
-                opacity: 0
-              }}
-              animate={{
-                opacity: 1
-              }}
-              transition={{
-                delay: 0.6
-              }}
-              className="text-gray-400 text-lg mb-8 max-w-xl">
-              
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.6 }}
+              className="text-gray-400 text-lg mb-8 max-w-xl"
+            >
               I am a Computer Science student at Mapua University specializing in Data Science. I leverage AI and machine learning to create innovative, efficient solutions, with a current focus on Deep Learning and NLP
             </motion.p>
 
             <motion.div
-              initial={{
-                opacity: 0,
-                y: 20
-              }}
-              animate={{
-                opacity: 1,
-                y: 0
-              }}
-              transition={{
-                delay: 0.7
-              }}
-              className="flex flex-wrap gap-4">
-              
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.7 }}
+              className="flex flex-wrap gap-4"
+            >
               <motion.button
                 onClick={scrollToProjects}
-                whileHover={{
-                  scale: 1.05
-                }}
-                whileTap={{
-                  scale: 0.95
-                }}
-                className="px-8 py-3 bg-neonBlue text-dark-900 font-semibold rounded-lg hover:bg-neonBlueLight transition-colors shadow-lg shadow-neonBlue/50">
-                
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="px-8 py-3 bg-neonBlue text-dark-900 font-semibold rounded-lg hover:bg-neonBlueLight transition-colors shadow-lg shadow-neonBlue/50"
+              >
                 View Projects
               </motion.button>
               <motion.a
- href="https://drive.google.com/file/d/1a6Iejx5McebjQvfR5TobGXdQPs6pNxnD/view?usp=sharing"
-  target="_blank"
-  rel="noopener noreferrer"
-  whileHover={{
-    scale: 1.05
-  }}
-  whileTap={{
-    scale: 0.95
-  }}
-  className="px-8 py-3 border-2 border-neonPurple text-neonPurple font-semibold rounded-lg hover:bg-neonPurple/10 transition-colors">
-  
-  Download Resume
+                href="https://drive.google.com/file/d/1a6Iejx5McebjQvfR5TobGXdQPs6pNxnD/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="px-8 py-3 border-2 border-neonPurple text-neonPurple font-semibold rounded-lg hover:bg-neonPurple/10 transition-colors"
+              >
+                Download Resume
               </motion.a>
             </motion.div>
           </motion.div>
 
+          {/* Profile Picture Placeholder Section */}
           <motion.div
-            initial={{
-              opacity: 0,
-              x: 50
-            }}
-            animate={{
-              opacity: 1,
-              x: 0
-            }}
-            transition={{
-              duration: 0.8,
-              delay: 0.4
-            }}
-            className="hidden lg:block">
-            
-            <div className="glass rounded-lg p-6 font-mono text-sm border border-neonBlue/30 shadow-xl shadow-neonBlue/10">
-              <div className="flex items-center gap-2 mb-4 pb-3 border-b border-gray-700">
-                <div className="w-3 h-3 rounded-full bg-red-500" />
-                <div className="w-3 h-3 rounded-full bg-yellow-500" />
-                <div className="w-3 h-3 rounded-full bg-green-500" />
-                <span className="ml-2 text-gray-500">developer.ts</span>
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="hidden lg:flex justify-center items-center"
+          >
+            <motion.div
+              animate={{ y: [-10, 10, -10] }}
+              transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
+              className="relative w-80 h-80 rounded-full p-1 bg-gradient-to-tr from-neonBlue to-neonPurple shadow-2xl shadow-neonBlue/20"
+            >
+              <div className="w-full h-full rounded-full overflow-hidden bg-[#0a0a0f] border-4 border-[#0a0a0f] relative group">
+                
+                {/* --- IMAGE TAG: REPLACE SRC WITH YOUR PHOTO --- */}
+                <img
+                  src="public/me.jpg"
+                  alt="Ryan Patenia Profile"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                
+                {/* Subtle inner shadow overlay */}
+                <div className="absolute inset-0 rounded-full border border-white/5 mix-blend-overlay"></div>
               </div>
-              <div className="text-gray-300 leading-relaxed whitespace-pre">
-                <span className="text-purple-400">const</span>{' '}
-                <span className="text-neonBlue">developer</span>
-                {' = {'}
-                {'\n'}
-                {'  name: '}
-                <span className="text-green-400">{'"Ryan Patenia"'}</span>
-                {',\n'}
-                {'  role: '}
-                <span className="text-green-400">{'"AI/ML Engineer"'}</span>
-                {',\n'}
-                {'  education: '}
-                <span className="text-green-400">{'"BS COMPUTER SCIENCE"'}</span>
-                {',\n'}
-                {'  skills: ['}
-                <span className="text-green-400">{'"Python"'}</span>
-                {', '}
-                <span className="text-green-400">{'"TensorFlow"'}</span>
-                {', '}
-                <span className="text-green-400">{'"React"'}</span>
-                {'],\n'}
-                {'  interests: ['}
-                <span className="text-green-400">{'"AI"'}</span>
-                {', '}
-                <span className="text-green-400">{'"ML"'}</span>
-                {', '}
-                <span className="text-green-400">{'"Data Science"'}</span>
-                {'],\n'}
-                {'  passion: '}
-                <span className="text-green-400">
-                  {'"Building intelligent systems"'}
-                </span>
-                {',\n'}
-                {'  currentFocus: '}
-                <span className="text-green-400">
-                  {'"Deep Learning & NLP"'}
-                </span>
-  
-              </div>
-            </div>
+            </motion.div>
           </motion.div>
+
         </div>
       </div>
 
       <motion.div
-        initial={{
-          opacity: 0
-        }}
-        animate={{
-          opacity: 1
-        }}
-        transition={{
-          delay: 1.5
-        }}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-        
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.5 }}
+        className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+      >
         <motion.div
-          animate={{
-            y: [0, 10, 0]
-          }}
-          transition={{
-            duration: 1.5,
-            repeat: Infinity
-          }}
+          animate={{ y: [0, 10, 0] }}
+          transition={{ duration: 1.5, repeat: Infinity }}
           className="text-neonBlue cursor-pointer"
           onClick={() =>
-          document.getElementById('about')?.scrollIntoView({
-            behavior: 'smooth'
-          })
-          }>
-          
+            document.getElementById('about')?.scrollIntoView({
+              behavior: 'smooth'
+            })
+          }
+        >
           <ChevronDownIcon size={32} />
         </motion.div>
       </motion.div>
-    </section>);
-
+    </section>
+  );
 }

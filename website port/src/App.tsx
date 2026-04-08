@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Navbar } from './components/Navbar';
 import { HeroSection } from './components/HeroSection';
 import { AboutSection } from './components/AboutSection';
@@ -9,7 +9,24 @@ import { ExperienceSection } from './components/ExperienceSection';
 import { TerminalSection } from './components/TerminalSection';
 import { ContactSection } from './components/ContactSection';
 import { AIChatWidget } from './components/AIChatWidget';
+
 export function App() {
+  
+  useEffect(() => {
+    
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+
+    if (window.location.hash) {
+      window.history.replaceState(null, '', window.location.pathname);
+    }
+
+    // Prevent the browser from remembering previous scroll positions
+    if ('scrollRestoration' in window.history) {
+      window.history.scrollRestoration = 'manual';
+    }
+  }, []);
+  // ------------------------------------------
+
   return (
     <div className="w-full min-h-screen bg-dark-900 text-white">
       <Navbar />
@@ -27,13 +44,12 @@ export function App() {
       <footer className="bg-dark-800 border-t border-neonBlue/20 py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-gray-400 text-sm">
-            © 2024 Arjun Patel. Built with React, TypeScript, and Tailwind CSS.
           </p>
           <p className="text-neonBlue text-xs mt-2 font-mono">
             {'<Designed with passion and lots of coffee ☕ />'}
           </p>
         </div>
       </footer>
-    </div>);
-
+    </div>
+  );
 }

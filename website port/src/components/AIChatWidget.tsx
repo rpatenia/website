@@ -7,17 +7,17 @@ interface ChatMessage {
 }
 const responses: Record<string, string> = {
   skills:
-  "Arjun's top skills include Python, TensorFlow, PyTorch, React, and deep learning. He's proficient in NLP, computer vision, and full-stack development!",
+  "Ryan's top skills include Python, TensorFlow, PyTorch, React, and deep learning. He's proficient in NLP, computer vision, and full-stack development!",
   projects:
-  'Arjun has built several impressive projects including a Neural Style Transfer App, Sentiment Analysis Dashboard, AI Code Review Bot, and more. Check out the Projects section!',
+  'Ryan has built several impressive projects including a StockTrack AI: A Web-Based Inventory and Ordering System with AI Demand Forecasting, DentEase, and more. Check out the Projects section!',
   experience:
-  "Arjun has worked as an ML Engineering Intern at TechCorp AI, Research Assistant at University AI Lab, and Full-Stack Developer Intern at StartupXYZ. He's also earned certifications from Google and AWS.",
+  "Ryan is currently pursuing a degree in Computer Science with a specialization in Data Science. He's also earned certifications",
   contact:
-  'You can reach Arjun at arjun.patel@email.com or connect on LinkedIn and GitHub. Feel free to send a message using the contact form!',
+  'You can reach Ryan at ryanpatenia@gmail.com or connect on LinkedIn and GitHub. Feel free to send a message using the contact form!',
   education:
-  "Arjun is currently pursuing B.Tech in Computer Science (2020-2024) with a specialization in AI/ML. He's published research papers and won multiple hackathons.",
+  "Ryan is currently pursuing a Bachelores Degree in Computer Science with a specialization in Data Science.",
   default:
-  "I'm here to help! Ask me about Arjun's skills, projects, experience, education, or how to contact him."
+  "I'm here to help! Ask me about Ryan's skills, projects, experience, education, or how to contact him."
 };
 export function AIChatWidget() {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,7 +25,7 @@ export function AIChatWidget() {
   {
     role: 'assistant',
     content:
-    "Hi! I'm an AI assistant. Ask me about Arjun's skills, projects, or experience!"
+    "Hi! I'm an AI assistant. Ask me about Ryan's skills, projects, or experience!"
   }]
   );
   const [input, setInput] = useState('');

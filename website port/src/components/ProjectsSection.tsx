@@ -41,7 +41,7 @@ const projects: Project[] = [
   title: 'DentEase',
   description:
   'A mobile dental clinic app developed in Kotlin using MVVM using architecture, featuring real-time Firebase synchronization and Paymongo payments',
-  category: ['AI/ML'],
+  category: ['Web Dev'],
   techStack: ['Kotlin', 'java', 'Gradle', 'MVVM','Firebase', 'Android'],
   liveUrl: '#',
   githubUrl: 'https://github.com/Zyrreaell/Dentease'
@@ -58,23 +58,15 @@ const projects: Project[] = [
 },
 {
   id: 5,
-  title: 'Full-Stack Task Manager',
+  title: 'Apply Data Science Life Cycle in Emotion Recognition through Facial Expression-',
   description:
   'Collaborative task management platform with real-time updates',
-  category: ['Web Dev'],
+  category: ['Data Science'],
   techStack: ['React', 'Node.js', 'MongoDB', 'Socket.io', 'Tailwind'],
   liveUrl: '#',
   githubUrl: '#'
 },
-{
-  id: 6,
-  title: 'Data Visualization Platform',
-  description: 'Interactive data visualization tool for complex datasets',
-  category: ['Data Science', 'Web Dev'],
-  techStack: ['D3.js', 'React', 'Python', 'Pandas', 'PostgreSQL'],
-  liveUrl: '#',
-  githubUrl: '#'
-}];
+];
 
 const categories: ProjectCategory[] = [
 'All',
@@ -183,15 +175,17 @@ export function ProjectsSection() {
           className="mb-12">
           
             <div className="glass rounded-xl p-8 border-2 border-neonBlue/40 hover:border-neonBlue/60 transition-all group relative overflow-hidden">
-              <div className="absolute top-4 right-4 px-4 py-1 bg-neonBlue/20 border border-neonBlue rounded-full text-neonBlue text-sm font-semibold">
-                Featured
-              </div>
-
+            
               <div className="grid md:grid-cols-2 gap-8">
-                {/* Image Placeholder */}
-                <div className="relative h-64 md:h-full rounded-lg overflow-hidden bg-gradient-to-br from-neonBlue/20 via-neonPurple/20 to-neonCyan/20 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
-                  <div className="text-6xl">🎨</div>
-                </div>
+{/* Image */}
+<div className="relative h-64 md:h-full rounded-lg overflow-hidden bg-gradient-to-br from-neonBlue/20 via-neonPurple/20 to-neonCyan/20 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+  <img
+    src="/CBCT.png"
+    alt="Project preview"
+    className="h-full w-full object-cover"
+    loading="lazy"
+/>
+</div>
 
                 {/* Content */}
                 <div className="flex flex-col justify-center">

@@ -6,13 +6,13 @@ interface Message {
 }
 const commands: Record<string, string> = {
   help: `Available commands:
-  - about: Learn about Arjun
+  - about: Learn about Paten
   - skills: View top skills
   - projects: List all projects
   - contact: Get contact information
   - clear: Clear terminal
   - hack: Try it and see 😉`,
-  about: `Arjun Patel - AI/ML Engineer
+  about: `Ryan Patenia - AI/ML Engineer
   
 Passionate CS student specializing in artificial intelligence and machine learning.
 Currently pursuing B.Tech with a focus on deep learning, NLP, and computer vision.
@@ -31,9 +31,9 @@ Published researcher, hackathon winner, and open-source contributor.`,
   5. Full-Stack Task Manager - Collaborative productivity tool
   6. Data Visualization Platform - Interactive data exploration`,
   contact: `Contact Information:
-  📧 Email: arjun.patel@email.com
-  💼 LinkedIn: linkedin.com/in/arjunpatel
-  🐙 GitHub: github.com/arjunpatel
+  📧 Email: ryan.patenia@email.com
+  💼 LinkedIn: linkedin.com/in/ryanpatenia
+  🐙 GitHub: github.com/rpatenia
   
 Feel free to reach out for collaborations or opportunities!`,
   clear: 'CLEAR'
@@ -42,7 +42,7 @@ export function TerminalSection() {
   const [messages, setMessages] = useState<Message[]>([
   {
     type: 'output',
-    content: `Welcome to Arjun's Interactive Terminal!
+    content: `Welcome to Ryan's Terminal!
 Type 'help' to see available commands.`
   }]
   );
@@ -160,7 +160,7 @@ Type 'help' to see available commands.`
           className="mb-8">
           
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="neon-glow-purple">Interactive Terminal</span>
+            <span className="neon-glow-purple">Terminal</span>
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-neonPurple to-neonCyan rounded-full" />
         </motion.div>
@@ -191,7 +191,7 @@ Type 'help' to see available commands.`
               <div className="w-3 h-3 rounded-full bg-yellow-500" />
               <div className="w-3 h-3 rounded-full bg-green-500" />
               <span className="ml-2 text-gray-400 text-sm font-mono">
-                arjun@portfolio:~$
+                ryan@portfolio:~$
               </span>
             </div>
 
