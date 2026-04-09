@@ -40,7 +40,7 @@ const experiences: ExperienceItem[] = [
       'Demonstrates a strong mastery of both the technical frameworks governing software production and the critical ethical considerations of modern data science.'
     ],
     icon: AwardIcon,
-    image: '/coursera2.png',
+    image: '/Coursera2.png',
     link: 'https://coursera.org/share/eb489b77465994d4ccd1e1e266badf9d'
   },
   {
@@ -53,7 +53,7 @@ const experiences: ExperienceItem[] = [
       'Integration methods such as adaptive quadrature, and interpolation algorithms using a cubic spline'
     ],
     icon: AwardIcon,
-    image: '/coursera3.png',
+    image: '/Coursera3.png',
     link: 'https://coursera.org/share/85f680489d4359c79738c4ea9f24b756'
   },
   {
@@ -66,7 +66,7 @@ const experiences: ExperienceItem[] = [
       'Covers the end-to-end process of how data is indexed, ranked, and retrieved for both the open web and private corporate environments.'
     ],
     icon: AwardIcon,
-    image: '/coursera4.png', 
+    image: '/Coursera4.png', 
     link: 'https://coursera.org/share/baf8665ac43dbfac5650615f1fe48238'
   },
   {
@@ -79,7 +79,7 @@ const experiences: ExperienceItem[] = [
       'deep exploration of the philosophical, legal, and social dimensions of AI.'
     ],
     icon: AwardIcon,
-    image: '/coursera5.png',
+    image: '/Coursera5.png',
     link: 'https://coursera.org/share/b8f847411e932b1e49a58abadc1aeec1'
   }
 ];
